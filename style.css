@@ -48,15 +48,18 @@ body {
 .title {
   font-size: 42px;
   color: #fff;
+  animation: MakeBig 1s ease-out;
 }
 
 .sub-title {
   font-size: 52px;
   color: orange;
+  animation: MakeBig 2s ease-out;
 }
 
 .text {
   color: #fff;
+  animation: MakeBig 3s ease-out;
 }
 
 .color-text{
@@ -65,4 +68,15 @@ body {
 
 .colore-text{
     color: #fff;
+}
+
+@keyframes MakeBig {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
